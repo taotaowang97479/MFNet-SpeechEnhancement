@@ -26,4 +26,9 @@ Performance of MFNet on the Voicebank+Demand (VCTK) test set:
 | Noisy | 1.9799 | 92.11 | 8.4474  |
 | MFNet | 3.0141 | 94.56 | 18.7835 |
 
-Additionally, these are the best results on the test set obtained during the first 100 epochs of training.
+Additionally, these are the best results on the test set obtained during the first 100 epochs of training.<br>
+![pesq](pesq.png)
+![stoi](stoi.png)
+![snr](snr.png)
+![tr_loss](tr_loss.png)
+![val_loss](val_loss.png)
