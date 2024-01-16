@@ -6,7 +6,8 @@ arxiv:https://arxiv.org/abs/2306.04286
 
 非常感谢作者的指导和帮助，与作者交流过后的更正结果：<br>
 1.初始学习率为3e-4，更正论文中的0.0034<br>
-2.输入网络的特征为压缩谱，即input=sign(stdct) * sqrt(stdct)
+2.输入网络的特征为压缩谱，即input=sign(stdct) * sqrt(stdct)<br>
+**关于STDCT的关键代码已给出，希望对你有帮助**
 
 # Result
 
