@@ -12,23 +12,25 @@ I appreciate the guidance and assistance from the author. After the correction f
 
 # Result
 
-This experiment did not utilize the warm-up strategy mentioned in the paper. Instead, following the author's recommendation, the training parameters were set as follows:
+The model used the code modified by the author in the issues of his repo, [ioyy900205/MFNet#1](https://github.com/ioyy900205/MFNet/issues/1)
 
+Experiments were conducted on the Voicebank+Demand, and the training parameters were set as follows:
+
+- The warm-up strategy mentioned in the paper was not used
 - Initial learning rate: 3e-4
-- Training for 1000 epochs
-- Cosine annealing with a period of 1000 epochs
+- Batch size: 2
+- Training for 100 epochs
+- Cosine annealing with a period of 100 epochs
 - Minimum value during cosine annealing: 1e-5
 
-Performance of MFNet on the Voicebank+Demand (VCTK) test set:
+Performance of MFNet on the Voicebank+Demand test set:
 
-|       |  PESQ  | STOI  | SI-SNR  |
-| :---: | :----: | :---: | :-----: |
-| Noisy | 1.9799 | 92.11 | 8.4474  |
-| MFNet | 3.0141 | 94.56 | 18.7835 |
+|       | PESQ | STOI | CSIG | CBAK | COVL | SSNR |
+| :---- | :--: | :--: | :--: | :--: | :--: | :--: |
+| Noisy | 1.97 | 92.1 | 3.35 | 2.44 | 2.63 | 1.73 |
+| MFNet | 3.05 | 94.6 | 4.19 | 3.55 | 3.63 | 9.79 |
 
-Additionally, these are the best results on the test set obtained during the first 100 epochs of training.<br>
-![pesq](pesq.png)
-![stoi](stoi.png)
-![snr](snr.png)
-![tr_loss](tr_loss.png)
-![val_loss](val_loss.png)
+The training process is as follows:
+
+![MFNet_result](https://github.com/user-attachments/assets/aba7ac3d-6781-4607-886a-edfa49b77cc6)
+
