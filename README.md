@@ -6,7 +6,7 @@ arxiv:https://arxiv.org/abs/2306.04286
 
 I appreciate the guidance and assistance from the author. After the correction following our discussion:<br>
 1.The initial learning rate is 3e-4, correcting the value from 0.0034 in the paper.<br>
-2.The features input to the network are compressed spectra, i.e., input = sign(stdct) * sqrt(stdct).<br>
+2.The features input to the network are compressed spectra, i.e., input = sign(stdct) * sqrt(abs(stdct)).<br>
 3.DCT transformation without normalization.<br>
 **I put the key code of STDCT, which may be useful for you.**
 
